@@ -1,13 +1,15 @@
-
+const {getPancitoService} = require('../services/cars.services')
 
 
 
 // Defincion de las funciones que respoden
 // -> la logica de dichas funciones -> service.js
 
-const getPancitoController = (_, response) => {
+const getPancitoController = (request, response) => {
     
-    response.json("Me gusta el pancito")
+    const pancito = getPancitoService(request)
+
+    response.json(pancito)
 }
 
 module.exports = {

@@ -1,6 +1,8 @@
 const app = require('./server/server')
+
 // Ejecutar la funcion que conecta con la DB
 // -> La logica de la funcion -> config.js (db)
+require('./db/config');
 
 // Leer puerto 
 // -> La definicion del puerto -> .env
