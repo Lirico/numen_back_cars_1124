@@ -5,7 +5,7 @@ const carRouter = require('../routers/cars.routes')
 const app = express();
 
 
-
+app.use(express.json())
 
 // Ejecucion del router
 app.use('/cars', carRouter)

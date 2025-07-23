@@ -25,7 +25,7 @@ const CarSchema = Schema({
     }
 })
 
-const CarModel = mongoose.model("Car", CarSchema);
+const CarModel = mongoose.model("Car", CarSchema); // cars
 
 /* 
     Argumentos del metodo "model" de mongoose.
